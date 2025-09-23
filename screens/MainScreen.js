@@ -4,10 +4,11 @@ import { Text, StyleSheet, View } from "react-native";
 
 // kreiranje komponente
 const MainScreen = () => {
-    return ( <View style={styles.container}>
+    return ( 
+    <View style={styles.container}>
         <Text style={styles.textStyle}>This is the Main Screen</Text>
     </View>
-    )
+    );
 };
 
 // kreiranje stylesheet-a
