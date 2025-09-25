@@ -7,7 +7,7 @@ import ProfileScreen from './screens/ProfileScreen'
 import ExerciseScreen from "./screens/ExerciseScreen"
 import Exercise1Screen from "./screens/Exercise1Screen"
 import QuoteScreen from "./screens/QuoteScreen"
-
+import ListScreen from './screens/ListScreen';
 
 const Stack = createStackNavigator();
 
@@ -15,9 +15,28 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="QuoteScreen" component={QuoteScreen}></Stack.Screen>
+        <Stack.Screen name="ListScreen" component={ListScreen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
+// import { createAppContainer } from 'react-navigation';
+// import { createStackNavigator } from 'react-navigation-stack';
+// import TestScreen from './src/screens/TestScreen';
+// import ListScreen from './src/screens/ListScreen';
+
+// const navigator=createStackNavigator(
+//   {
+//   Test:TestScreen,
+//   List:ListScreen
+// },
+// {
+//   initialRouteName:"List",
+//   defaultNavigationOptions:{
+//     title:"App"
+//   }
+// }
+// );
+
+// export default createAppContainer(navigator); 
