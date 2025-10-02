@@ -8,6 +8,7 @@ import ExerciseScreen from "./screens/ExerciseScreen"
 import Exercise1Screen from "./screens/Exercise1Screen"
 import QuoteScreen from "./screens/QuoteScreen"
 import ListScreen from './screens/ListScreen';
+import StudentScreen from './screens/StudentScreen';
 
 const Stack = createStackNavigator();
 
@@ -15,7 +16,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="ListScreen" component={ListScreen}></Stack.Screen>
+        <Stack.Screen name="StudentScreen" component={StudentScreen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
