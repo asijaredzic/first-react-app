@@ -3,25 +3,27 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import MainScreen from './screens/MainScreen'
-import ProfileScreen from './screens/ProfileScreen'
-import ExerciseScreen from "./screens/ExerciseScreen"
-import Exercise1Screen from "./screens/Exercise1Screen"
 import QuoteScreen from "./screens/QuoteScreen"
 import ListScreen from './screens/ListScreen';
-import StudentScreen from './screens/StudentScreen';
-import QuizScreen from './screens/QuizScreen';
+import ButtonScreen from './screens/ButtonScreen';
+import { createAppContainer } from '@react-navigation/native';
+import MenuScreen from './screens/MenuScreen';
 
-const Stack = createStackNavigator();
+const navigator = createStackNavigator();
 
-export default function App() {
-  return (
+ export default function App() {
+   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="QuizScreen" component={QuizScreen}></Stack.Screen>
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
+      <Stack.Navigator initialRouteName="Name"> <Stack.Screen name="Main Screen" component={MainScreen}></Stack.Screen>
+      <Stack.Screen name="Main Screen" component={MainScreen}></Stack.Screen>
+      <Stack.Screen name="List Screen" component={ListScreen}></Stack.Screen>
+      <Stack.Screen name="Quote Screen" component={QuoteScreen}></Stack.Screen>
+      <Stack.Screen name="Menu Screen" component={MenuScreen}></Stack.Screen>
+      <Stack.Screen name="Button Screen" component={ButtonScreen}></Stack.Screen>
+       </Stack.Navigator>
+     </NavigationContainer>
+   );
+ }
 
 // import { createAppContainer } from 'react-navigation';
 // import { createStackNavigator } from 'react-navigation-stack';

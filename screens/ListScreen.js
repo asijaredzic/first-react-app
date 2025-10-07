@@ -39,7 +39,7 @@ const students=[
     {word1:'banana',word2:'coral',word3:'25'},
 ];
 
-const ListScreen=()=>{
+const ListScreen=(props)=>{
     return (
         <View style={styles.container}>
             <Text style={styles.title}>ListScreen</Text>
@@ -58,6 +58,7 @@ const ListScreen=()=>{
         }
             />
 
+        <Button title="Go Back" onPress={() => props.navigation.goBack()} />
         </View>
     );
 };
