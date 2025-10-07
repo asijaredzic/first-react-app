@@ -12,6 +12,11 @@ const MenuScreen = (props) => {
           onPress= {() => props.navigation.navigate("List")}
         />
 
+        <Button
+          title="Go to Home Page"
+          onPress= {() => props.navigation.navigate("Home")}
+        />
+
         <TouchableOpacity
           style={styles.touchableBtn}
           onPress={() => props.navigation.navigate("Quiz")}

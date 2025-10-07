@@ -8,6 +8,8 @@ import ListScreen from './screens/ListScreen';
 import ButtonScreen from './screens/ButtonScreen';
 import { createAppContainer } from '@react-navigation/native';
 import MenuScreen from './screens/MenuScreen';
+import HomeScreen from './screens/HomeScreen';
+import ProfileScreen from './screens/ProfileScreen';
 
 const navigator = createStackNavigator();
 
@@ -18,7 +20,9 @@ const navigator = createStackNavigator();
       <Stack.Screen name="Main Screen" component={MainScreen}></Stack.Screen>
       <Stack.Screen name="List Screen" component={ListScreen}></Stack.Screen>
       <Stack.Screen name="Quote Screen" component={QuoteScreen}></Stack.Screen>
-      <Stack.Screen name="Menu Screen" component={MenuScreen}></Stack.Screen>
+      <Stack.Screen name="Menu" component={MenuScreen}></Stack.Screen>
+      <Stack.Screen name="Home" component={HomeScreen}></Stack.Screen>
+      <Stack.Screen name="Profile" component={ProfileScreen}></Stack.Screen>
       <Stack.Screen name="Button Screen" component={ButtonScreen}></Stack.Screen>
        </Stack.Navigator>
      </NavigationContainer>

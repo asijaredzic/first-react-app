@@ -1,28 +1,26 @@
- // importovanje biblioteka
-import React from "react";
-import { Text, StyleSheet, View } from "react-native";
+import React from 'react'
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-// kreiranje komponente
-const ProfileScreen = () => {
-    return ( <View style={styles.container}>
-        <Text style={styles.textStyle}>This is the Profile Screen</Text>
+const MenuScreen = (props) => {
+    console.log(props);
+    return (
+    <View>
+        <Text style={styles.text}>Welcome to Menu Screen</Text>
+        
+        <Button
+          title="Go back to Home Screen"
+          onPress= {() => props.navigation.navigate("Home")}
+        />
     </View>
-    )
+    );
 };
 
-// kreiranje stylesheet-a
 const styles = StyleSheet.create({
-    container: {
-        flex: 2,
-        backgroundColor: '#c4dbf5ff',
-        alignItems: "center",
-        justifyContent: "center",
-    },
-    textStyle: {
-        fontSize: 28,
-        color: '#131c80ff'
-    },
+    text: {
+        textAlign: "center",
+        fontSize: 20,
+        marginVertical: 20,
+    }
 });
 
-// exportovanje komponente
 export default ProfileScreen;
