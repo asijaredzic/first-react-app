@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { Button } from 'react-native-web';
 
 const MenuScreen = (props) => {
     console.log(props);
@@ -13,8 +14,14 @@ const MenuScreen = (props) => {
         />
 
         <Button
-          title="Go to Home Page"
+          style={styles.btnText}
+          title="Go to Home Screen"
           onPress= {() => props.navigation.navigate("Home")}
+        />
+
+        <Button
+          title="Go to Students Screen"
+          onPress= {() => props.navigation.navigate("Students")}
         />
 
         <TouchableOpacity

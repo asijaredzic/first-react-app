@@ -24,6 +24,7 @@ const navigator = createStackNavigator();
       <Stack.Screen name="Home" component={HomeScreen}></Stack.Screen>
       <Stack.Screen name="Profile" component={ProfileScreen}></Stack.Screen>
       <Stack.Screen name="Button Screen" component={ButtonScreen}></Stack.Screen>
+      <Stack.Screen name="Students" component={StudentsScreen}></Stack.Screen>
        </Stack.Navigator>
      </NavigationContainer>
    );
