@@ -1,20 +1,27 @@
 import React from 'react'
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Touchable } from "react-native";
 
 const StudentDetails = (props) => {
     console.log(props);
     return (
-    <View>
-        <View style={styles.cardWrapper}>
-            <View>
-                <Image source={props.image} style={styles.img}></Image>
+    <TouchableOpacity onPress={() => console.log("Student:", props.name)}>
+        <View>
+            <View style={styles.cardWrapper}>
+                <View>
+                    <Image source={props.image} style={styles.img}></Image>
+                </View>
+                <View style={styles.infoWrapper}>
+                    <Text style={styles.text}>{props.name}</Text>
+                    <Image
+                        source={require("../assets/heart.png")}
+                        style={styles.heartIcon}
+                    />
+                </View>
+
+                    <Text>{props.description}</Text>
+                </View>
             </View>
-            <View style={styles.infoWrapper}>
-                <Text style={styles.text}>{props.name}</Text>
-                <Text>{props.description}</Text>
-            </View>
-        </View>
-    </View>
+    </TouchableOpacity>
     );
 };
 
