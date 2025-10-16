@@ -10,6 +10,9 @@ import { createAppContainer } from '@react-navigation/native';
 import MenuScreen from './screens/MenuScreen';
 import HomeScreen from './screens/HomeScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import BoxScreen from './screens/BoxScreen';
+import BoxScreenChallenge from './screens/BoxScreenChallenge';
+import AdvancedBoxScreenChallenge from './screens/AdvancedBoxScreenChallenge';
 
 const navigator = createStackNavigator();
 
@@ -18,6 +21,9 @@ const navigator = createStackNavigator();
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Profile"> 
       <Stack.Screen name="Profile Screen" component={ProfileScreen}></Stack.Screen>
+      <Stack.Screen name="Box" component={BoxScreen}></Stack.Screen>
+      <Stack.Screen name="Box Challenge" component={BoxScreenChallenge}></Stack.Screen>
+      <Stack.Screen name="Advanced Box Challenge" component={AdvancedBoxScreenChallenge}></Stack.Screen>
       {/* <Stack.Screen name="Main Screen" component={MainScreen}></Stack.Screen>
       <Stack.Screen name="List Screen" component={ListScreen}></Stack.Screen>
       <Stack.Screen name="Quote Screen" component={QuoteScreen}></Stack.Screen>

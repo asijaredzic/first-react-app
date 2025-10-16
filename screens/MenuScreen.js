@@ -24,6 +24,21 @@ const MenuScreen = (props) => {
           onPress= {() => props.navigation.navigate("Students")}
         />
 
+        <Button
+          title="Go to box Screen"
+          onPress= {() => props.navigation.navigate("Box")}
+        />
+
+        <Button
+          title="Go to box Screen challenge"
+          onPress= {() => props.navigation.navigate("Box Challenge")}
+        />
+
+        <Button
+          title="Go to advanced box Screen challenge"
+          onPress= {() => props.navigation.navigate("Advanced Box Challenge")}
+        />
+
         <TouchableOpacity
           style={styles.touchableBtn}
           onPress={() => props.navigation.navigate("Quiz")}
