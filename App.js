@@ -13,6 +13,8 @@ import ProfileScreen from './screens/ProfileScreen';
 import BoxScreen from './screens/BoxScreen';
 import BoxScreenChallenge from './screens/BoxScreenChallenge';
 import AdvancedBoxScreenChallenge from './screens/AdvancedBoxScreenChallenge';
+import PostsScreen from './screens/PostsScreen';
+import UsersScreen from './screens/UsersScreen';
 
 const navigator = createStackNavigator();
 
@@ -24,10 +26,12 @@ const navigator = createStackNavigator();
       <Stack.Screen name="Box" component={BoxScreen}></Stack.Screen>
       <Stack.Screen name="Box Challenge" component={BoxScreenChallenge}></Stack.Screen>
       <Stack.Screen name="Advanced Box Challenge" component={AdvancedBoxScreenChallenge}></Stack.Screen>
+      <Stack.Screen name="Posts" component={PostScreen}></Stack.Screen>
+      <Stack.Screen name="Users" component={UsersScreen}></Stack.Screen>
       {/* <Stack.Screen name="Main Screen" component={MainScreen}></Stack.Screen>
       <Stack.Screen name="List Screen" component={ListScreen}></Stack.Screen>
       <Stack.Screen name="Quote Screen" component={QuoteScreen}></Stack.Screen>
-      <Stack.Screen name="Menu" component={MenuScreen}></Stack.Screen>
+      <Stack.Screen name="Menu" component={MenuScreen}></Stack.Screen><
       <Stack.Screen name="Home" component={HomeScreen}></Stack.Screen>
       <Stack.Screen name="Profile" component={ProfileScreen}></Stack.Screen>
       <Stack.Screen name="Button Screen" component={ButtonScreen}></Stack.Screen>
