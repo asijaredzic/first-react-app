@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "name": "Shoes",
+        "category": "Footwear",
+        "price": "$125",
+        "stock": "Yes",
+        "image": "https://basketzone.net/zdjecia/zdjecia/2015/09/25/NIKE_ZOOM_HYPERCHASE_CRIMSON_JAMES_HARDEN_705363-600.jpg",
+        "description": "Lorem ipsum dolor sit amet"
+    },
+    {
+        "id": "2",
+        "name": "Ballet Shoes",
+        "category": "Dance",
+        "price": "$60",
+        "stock": "No",
+        "image": "https://danceworld.ie/cdn/shop/products/s0172.jpg?v=1656676846&width=1946",
+        "description": "Lorem ipsum dolor sit amet"
+    },
+    {
+        "id": "3",
+        "name": "Ball",
+        "category": "Sport",
+        "price": "$40",
+        "stock": "Yes",
+        "image": "https://img.freepik.com/free-psd/sport-ball-isolated_23-2151387853.jpg?semt=ais_hybrid&w=740&q=80",
+        "description": "Lorem ipsum dolor sit amet"
+    },
+    {
+        "id": "4",
+        "name": "Phone",
+        "category": "Electronics",
+        "price": "$300",
+        "stock": "Yes",
+        "image": "https://crdms.images.consumerreports.org/prod/products/cr/models/399694-smartphones-apple-iphone-11-10008711.png",
+        "description": "Lorem ipsum dolor sit amet"  
+    },
+    {
+        "id": "5",
+        "name": "Tablet",
+        "category": "Electronics",
+        "price": "$430",
+        "stock": "No",
+        "image": "https://3dbox.ba/wp-content/uploads/2025/04/samsung-galaxy-tab-s10-fe-light-blue-1-300x300.jpg",
+        "description": "Lorem ipsum dolor sit amet"
+    },
+    {
+        "id": "6",
+        "name": "Hoodie",
+        "category": "Clothes",
+        "price": "$30",
+        "stock": "Yes",
+        "image": "https://image.made-in-china.com/2f0j00lISodOLnwhzB/Men-s-420g-Cotton-Hoodie-Swater-Vitage-Wash-Hoodie-Acid-Washed-Hoodie-No-Strings-Customed-Hoodie-for-Fall-Winter.webp",
+        "description": "Lorem ipsum dolor sit amet"
+    },
+    {
+        "id": "7",
+        "name": "Perfume",
+        "category": "Scents",
+        "price": "$100",
+        "stock": "No",
+        "image": "https://n.nordstrommedia.com/it/f2e1d1df-fba4-4d5d-815b-f017e7c0532a.jpeg?h=368&w=240&dpr=2",
+        "description": "Lorem ipsum dolor sit amet"
+    },  
+    {
+        "id": "8",
+        "name": "Car",
+        "category": "Vehicle",
+        "price": "$20000",
+        "stock": "Yes",
+        "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Jaguar/F-Pace/10644/1755774688332/front-left-side-47.jpg?impolicy=resize&imwidth=480",
+        "description": "Lorem ipsum dolor sit amet"
+    }  
+]

@@ -17,6 +17,8 @@ import PostsScreen from './screens/PostsScreen';
 import UsersScreen from './screens/UsersScreen';
 import CountriesScreen from './screens/CountriesScreen';
 import CountriesScreen from './screens/CountriesScreen';
+import ProductsScreen from './screens/ProductsScreen';
+
 
 const navigator = createStackNavigator();
 
@@ -31,6 +33,7 @@ const navigator = createStackNavigator();
       <Stack.Screen name="Posts" component={PostScreen}></Stack.Screen>
       <Stack.Screen name="Users" component={UsersScreen}></Stack.Screen>
       <Stack.Screen name="Countries" component={CountriesScreen}></Stack.Screen>
+      <Stack.Screen name="Products" component={ProductsScreen}></Stack.Screen>
       {/* <Stack.Screen name="Main Screen" component={MainScreen}></Stack.Screen>
       <Stack.Screen name="List Screen" component={ListScreen}></Stack.Screen>
       <Stack.Screen name="Quote Screen" component={QuoteScreen}></Stack.Screen>
